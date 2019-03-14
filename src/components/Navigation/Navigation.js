@@ -6,7 +6,7 @@ const Navigation = () => {
         <div className="container">
             <header>
                 <div class="header-branding">
-                    <h1>Tweereact</h1>
+                    <h1>Tweetreact</h1>
                 </div>
                 <nav>
                     <ul>
