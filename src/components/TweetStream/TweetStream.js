@@ -1,17 +1,18 @@
 import React from 'react';
-import TweetField from '../TweetField/TweetField';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import TweetList from '../TweetList/TweetList';
 
-class TweetStream extends React.Component {
-    render () {
-        return (
-            <div>
-                <TweetField />
-                <div className="tweet-stream grid-col">
-                    <h1>Tweet-Stream Section</h1> 
-                </div>
-            </div>
-        );
-    }
+const TweetStream = ({ tweets }) => {
+    return (
+        <div className="tweet-stream">
+            {
+                Object.keys(tweets).map((res, i) => {
+                    if (tweets) return <TweetList key={i} tweets={tweets} />
+                    else return '';
+                })
+            }
+        </div>
+    );
 }
 
 export default TweetStream;

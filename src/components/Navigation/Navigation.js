@@ -5,8 +5,8 @@ const Navigation = () => {
     return (
         <div className="container">
             <header>
-                <div class="header-branding">
-                    <h1 class="animated bounce">Tweetreact</h1>
+                <div className="header-branding">
+                    <h1 className="animated bounce">Tweetreact</h1>
                 </div>
                 <nav>
                     <ul>
