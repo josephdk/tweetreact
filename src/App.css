@@ -1,4 +1,7 @@
 .App {
 }
 
-
+.container {
+    width: 80%;
+    margin: auto;
+}

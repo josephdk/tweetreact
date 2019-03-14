@@ -1,0 +1,27 @@
+header {
+    background-color: #35424a;
+    color: white;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: 2px solid black;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header .header-branding {
+    padding-left: 20px;
+    float: left;
+}
+
+header nav {
+    margin-top: 10px;
+    float: right;
+}
+
+header h1 {
+    margin: 0;
+}

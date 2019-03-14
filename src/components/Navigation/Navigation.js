@@ -1,8 +1,22 @@
 import React from 'react';
+import './Navigation.css';
 
 const Navigation = () => {
     return (
-        <h1 className="f1">Testing Nav</h1>
+        <div className="container">
+            <header>
+                <div class="header-branding">
+                    <h1>Tweereact</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Profile</li>
+                        <li>Sign Out</li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
     );
 }
 
