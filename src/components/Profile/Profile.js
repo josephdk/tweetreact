@@ -3,8 +3,10 @@ import './Profile.css';
 
 const Profile = () => {
     return (
-        <div className="profile grid-col">
-            <h1>Profile Section</h1> 
+        <div className="grid-col">
+            <div className="cell-bg">
+                <h1>Profile Section</h1> 
+            </div>
         </div>
     );
 }

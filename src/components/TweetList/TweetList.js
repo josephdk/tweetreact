@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const TweetList = ({ tweets }) => {
-    return (
-        <div>
-            <h1>Tweets displaying correctly!</h1>
-        </div>
-    );
+class TweetList extends Component {
+    render () {
+        const { body, name, email, id } = this.props.tweet;
+        return (
+            <div className="cell-bg">
+                <p>Name: {name} - Email: {email}</p>
+                <p>{body}</p>
+            </div>
+        );
+    }
 }
 
 export default TweetList;

@@ -1,18 +1,13 @@
-import React from 'react';
-import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import React, {Component} from 'react';
 import TweetList from '../TweetList/TweetList';
 
-const TweetStream = ({ tweets }) => {
-    return (
-        <div className="tweet-stream">
-            {
-                Object.keys(tweets).map((res, i) => {
-                    if (tweets) return <TweetList key={i} tweets={tweets} />
-                    else return '';
-                })
-            }
-        </div>
-    );
+class TweetStream extends Component {
+
+    render () {
+        return this.props.tweets.map((tweet) => (
+            <TweetList key={tweet.id} tweet={tweet} />
+        ));
+    }
 }
 
 export default TweetStream;

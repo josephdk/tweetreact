@@ -12,7 +12,7 @@
     grid-template-columns: 1fr 4fr 1fr;
 }
 
-.grid-col {
+.cell-bg {
     background-color: #c0c0c0;
 }
 
