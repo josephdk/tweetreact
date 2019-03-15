@@ -4,7 +4,7 @@ import './Profile.css';
 const Profile = () => {
     return (
         <div className="grid-col">
-            <div className="cell-bg">
+            <div className="profile cell-bg">
                 <h1>Profile Section</h1> 
             </div>
         </div>
