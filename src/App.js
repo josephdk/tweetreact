@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 import Navigation from './components/Navigation/Navigation';
 import Profile from './components/Profile/Profile';
@@ -13,14 +12,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      tweets: []
+      route: ''
     }
   }
-
-componentDidMount() {
-  axios.get('https://jsonplaceholder.typicode.com/comments?_limit=10')
-    .then(res => this.setState({ tweets: res.data }))
-}
 
   render() {
     return (

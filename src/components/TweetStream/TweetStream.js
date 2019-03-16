@@ -3,9 +3,19 @@ import TweetList from '../TweetList/TweetList';
 
 class TweetStream extends Component {
 
+    state = {
+        tweets: [],
+    }
+
+    componentDidMount() {
+        fetch('http://localhost:3001/')
+        .then(response => response.json())
+        .then(data => this.setState({ tweets: data.tweets }));
+    }
+
     render () {
-        return this.props.tweets.map((tweet) => (
-            <TweetList key={tweet.id} tweet={tweet} />
+        return this.state.tweets.map((tweet) => (
+            <TweetList key={tweet.tweetid} tweet={tweet} />
         ));
     }
 }
